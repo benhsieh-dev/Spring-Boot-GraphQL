@@ -2,10 +2,12 @@ package dev.danvega.books.repository;
 
 import dev.danvega.books.model.Author;
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class AuthorRepository {
 
     private List<Author> authors = new ArrayList<>();
